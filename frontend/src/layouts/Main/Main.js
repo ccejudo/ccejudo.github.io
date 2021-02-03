@@ -67,7 +67,7 @@ function Main() {
                                         <Slide index={2}>
                                             <div>
                                                 <h2><FaMedal/>  Achivements</h2>
-                                                <p>Cool</p>
+                                                <p>Three Recognitions for Academic Excellence</p>
                                             </div>
                                         </Slide>
                                     </Slider>
