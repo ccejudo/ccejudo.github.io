@@ -58,9 +58,9 @@ function Main() {
                                                 <h2><FaLaptopCode/>  Technologies</h2>
                                                 <ul>
                                                     <li>ReactJS</li>
-                                                    <li>ReactJS</li>
-                                                    <li>ReactJS</li>
-                                                    <li>ReactJS</li>
+                                                    <li>NodeJS</li>
+                                                    <li>Python</li>
+                                                    <li>CSS</li>
                                                 </ul>
                                             </div>
                                         </Slide>
