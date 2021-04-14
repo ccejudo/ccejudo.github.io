@@ -123,6 +123,24 @@
     color: black
 }
 
+.carousel--button {
+	border-radius:20px;
+	border:1px solid #ffffff;
+    background-color: rgba(0, 0, 0, 0);
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:15px;
+	padding:9px 23px;
+}
+.carousel--button:hover {
+	background-color:rgb(234, 208, 24);
+}
+.carousel--button:active {
+	position:relative;
+	top:1px;
+}
+
 @media screen and (max-width: 991px) {
     .container--welcome{
         text-align: center;
@@ -130,7 +148,7 @@
     }
 
     .section--welcome{
-        height: 90vh;
+        background: url('./bg/welcome.jpg') no-repeat center;
     }
 
     .section--welcome h1{

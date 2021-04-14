@@ -9,6 +9,8 @@ import { Slide as AnimatedSlide, Fade } from 'react-reveal';
 import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
 import { FaGraduationCap, FaLaptopCode, FaMedal } from 'react-icons/fa';
 
+import { Grid } from '@material-ui/core';
+
 function Main() {
     return (
         <div>
@@ -71,8 +73,10 @@ function Main() {
                                             </div>
                                         </Slide>
                                     </Slider>
-                                    <ButtonBack>Back</ButtonBack>
-                                    <ButtonNext>Next</ButtonNext>
+                                    <Grid container justify="space-around">
+                                        <ButtonBack className='carousel--button'>Back</ButtonBack>
+                                        <ButtonNext className='carousel--button'>Next</ButtonNext>
+                                    </Grid>
                                 </CarouselProvider>
                             </div>
                         </div>
