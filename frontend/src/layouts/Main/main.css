@@ -65,6 +65,7 @@
 
 .about--image{
     width: 50%;
+    padding: 1rem;
     margin: auto;
     text-align: center;
 }
@@ -75,6 +76,20 @@
 
 .carousel--container{
     width: 100%;
+}
+
+.card--container{
+    text-align: center;
+}
+
+.card--container ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card--container li{
+    width: 60%;
 }
 
 .bg--light{
