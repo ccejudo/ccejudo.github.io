@@ -16,6 +16,7 @@ import AboutCarousel from '../../components/AboutCarousel/AboutCarousel';
 function Main() {
     return (
         <Grid container>
+            <span id="inicio" className="link-welcome"/>
             <Grid container item xs={12} className="section--welcome">
                 <div className="bg--light">
                     <AnimatedSlide up>
@@ -29,7 +30,7 @@ function Main() {
                             <button className='button--social' onClick={ () => window.open('https://www.linkedin.com/in/cristopher-cejudo/') }>
                                 <LinkedInIcon style={{ fontSize: '3rem', color:'rgb(255, 230, 41)' }}/>
                             </button>
-                            <button className='button--social' onClick={ () => window.open() }>
+                            <button className='button--social' onClick={ () => window.open("mailto:cristopher.cm1999@gmail.com") }>
                                 <MailIcon style={{ fontSize: '3rem', color:'rgb(255, 230, 41)' }}/>
                             </button>
                         </Grid>
@@ -52,7 +53,13 @@ function Main() {
                 <Grid container item xs={12} className='about--wrapper'>
                     <Grid item xs={12} md={6} className='about--text'>
                         <AnimatedSlide right>
-                            <p>Hello! I'm Cristopher and I'm passionate about using software and coding to create and devolop new ideas. m</p>
+                            <p>
+                                Hello! I'm Cristopher and I'm passionate about using software to create and devolop new ideas.
+                                My interests are Full-Stack Development, Machine Learning and Site Reliability. 
+                                Lately I've been working with the following languages and technologies:
+                                <br/>
+                                Also, I like to play the ukulele and go for a hike sometimes. 🏔
+                            </p>
                         </AnimatedSlide>
                     </Grid>
                     <Grid item xs={12} md={6} className='about--image'>
@@ -64,19 +71,37 @@ function Main() {
                 <span id="portfolio" className="link-top"/>
             </Grid>
             <Grid container item xs={12} className="section--portfolio">
-                <div className='bg--white container--section'>
-                    <div className='title--nice'>
+                <Grid className='bg--white container--section'>
+                    <Grid item xs={12} className='title--nice'>
+                        <AnimatedSlide left>
                             <h1 className='color--black'><b>PORTFOLIO</b></h1>
                             <span></span>
-                    </div>
-                </div>
+                        </AnimatedSlide>
+                    </Grid>
+                </Grid>
+                <span id="experience" className="link-top"/>
             </Grid>
-            <div className="section--experience">
-
-            </div>
-            <div className="section--contact">
-
-            </div>
+            <Grid container item xs={12} className="section--portfolio">
+                <Grid className='bg--black container--section'>
+                    <Grid item xs={12} className='title--nice'>
+                        <AnimatedSlide left>
+                            <h1 className='color--white'><b>EXPERIENCE</b></h1>
+                            <span></span>
+                        </AnimatedSlide>
+                    </Grid>
+                </Grid>
+                <span id="experience" className="link-top"/>
+            </Grid>
+            <Grid container item xs={12} className="section--portfolio">
+                <Grid className='bg--white container--section'>
+                    <Grid item xs={12} className='title--nice'>
+                        <AnimatedSlide left>
+                            <h1 className='color--black'><b>CONTACT ME</b></h1>
+                            <span></span>
+                        </AnimatedSlide>
+                    </Grid>
+                </Grid>
+            </Grid>
         </Grid>
     )
 }
